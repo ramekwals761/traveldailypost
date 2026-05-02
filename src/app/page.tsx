@@ -14,8 +14,6 @@ import Sidebar from '@/components/Sidebar';
 import NewsCard from '@/components/NewsCard';
 import Link from 'next/link';
 
-export const revalidate = 3600;
-
 export const metadata: Metadata = {
   title: 'Kordinate News – Global Travel News & Tourism Updates',
   description: 'Breaking travel news, tourism updates, airline news, hotel news, cruise news, and destination guides. Your trusted global travel news source.',

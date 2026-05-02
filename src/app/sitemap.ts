@@ -1,6 +1,8 @@
 import { MetadataRoute } from 'next';
 import { articles, categories } from '@/lib/news-data';
 
+export const dynamic = 'force-static';
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://kordinate.world';
 

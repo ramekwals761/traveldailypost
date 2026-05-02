@@ -1,9 +1,0 @@
-User-Agent: *
-Allow: /
-Disallow: /api/
-Disallow: /admin/
-
-User-Agent: Googlebot-News
-Allow: /
-
-Sitemap: https://kordinate.world/sitemap.xml
