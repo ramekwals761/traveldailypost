@@ -6,15 +6,11 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       {
+        // 🚧 Site is under development — block ALL crawlers
         userAgent: '*',
-        allow: '/',
-        disallow: ['/api/', '/admin/'],
-      },
-      {
-        userAgent: 'Googlebot-News',
-        allow: '/',
+        disallow: '/',
       },
     ],
-    sitemap: 'https://traveldailypost.com/sitemap.xml',
+    // Sitemap hidden during development to prevent discovery
   };
 }
