@@ -28,7 +28,7 @@ export default function NotFound() {
             transition: 'background 0.2s',
           }}
         >
-          ← Back to Kordinate News
+          ← Back to Travel Daily Post
         </Link>
       </div>
     </div>

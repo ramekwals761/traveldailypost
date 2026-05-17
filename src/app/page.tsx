@@ -9,19 +9,18 @@ import HeroSection from '@/components/HeroSection';
 import LatestNewsTicker from '@/components/LatestNewsTicker';
 import CategorySection from '@/components/CategorySection';
 import RegionalNews from '@/components/RegionalNews';
-import TravelEventsSection from '@/components/TravelEventsSection';
 import Sidebar from '@/components/Sidebar';
 import NewsCard from '@/components/NewsCard';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Kordinate News – Global Travel News & Tourism Updates',
+  title: 'Travel Daily Post – Global Travel News & Tourism Updates',
   description: 'Breaking travel news, tourism updates, airline news, hotel news, cruise news, and destination guides. Your trusted global travel news source.',
-  alternates: { canonical: 'https://kordinate.world' },
+  alternates: { canonical: 'https://traveldailypost.com' },
   openGraph: {
-    title: 'Kordinate News – Global Travel News & Tourism Updates',
+    title: 'Travel Daily Post – Global Travel News & Tourism Updates',
     description: 'Breaking travel news, tourism updates, airline news, hotel news, cruise news, and destination guides.',
-    url: 'https://kordinate.world',
+    url: 'https://traveldailypost.com',
     type: 'website',
   },
 };
@@ -48,6 +47,42 @@ function getArticlesByRegion(region: string) {
 }
 
 export default function HomePage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Organization',
+        '@id': 'https://traveldailypost.com/#organization',
+        'name': 'Travel Daily Post',
+        'url': 'https://traveldailypost.com',
+        'logo': {
+          '@type': 'ImageObject',
+          'url': 'https://traveldailypost.com/logo.png',
+          'width': 600,
+          'height': 60,
+        },
+        'sameAs': [
+          'https://www.facebook.com/traveldailypost',
+          'https://x.com/traveldailypost',
+          'https://www.instagram.com/traveldailypost',
+          'https://www.linkedin.com/company/traveldailypost',
+        ],
+      },
+      {
+        '@type': 'WebSite',
+        '@id': 'https://traveldailypost.com/#website',
+        'url': 'https://traveldailypost.com',
+        'name': 'Travel Daily Post',
+        'publisher': { '@id': 'https://traveldailypost.com/#organization' },
+        'potentialAction': {
+          '@type': 'SearchAction',
+          'target': 'https://traveldailypost.com/search?q={search_term_string}',
+          'query-input': 'required name=search_term_string',
+        },
+      },
+    ],
+  };
+
   const featured = getFeaturedArticle();
   const secondary = featured ? articles.filter((a) => a.id !== featured.id).slice(0, 2) : articles.slice(0, 2);
   const travelNews = getArticlesByCategory('travel-news');
@@ -55,7 +90,6 @@ export default function HomePage() {
   const airlineNews = getArticlesByCategory('airline-news');
   const hotelNews = getArticlesByCategory('hotel-news');
   const cruiseNews = getArticlesByCategory('cruise-news');
-  const meetingEvents = getArticlesByCategory('meeting-events');
   const destinationNews = getArticlesByCategory('destination-news');
   const travelDeals = [...getArticlesByCategory('travel-deals'), ...getArticlesByCategory('travel-alerts')];
   const travelTrends = [...getArticlesByCategory('travel-trends'), ...getArticlesByCategory('technology-news')];
@@ -71,6 +105,11 @@ export default function HomePage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {/* Hero */}
       <HeroSection featured={featured} secondary={secondary} />
 
@@ -143,8 +182,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Meeting & Events */}
-      <CategorySection title="Meeting & Event Industry" slug="meeting-events" articles={meetingEvents} layout="grid-2" />
 
       {/* Destination News */}
       <CategorySection title="Destination News" slug="destination-news" articles={destinationNews} layout="grid-3" background="gray" />
@@ -157,9 +194,6 @@ export default function HomePage() {
 
       {/* Regional News */}
       <RegionalNews articlesByRegion={articlesByRegion} />
-
-      {/* Events Calendar */}
-      <TravelEventsSection />
     </>
   );
 }

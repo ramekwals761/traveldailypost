@@ -28,11 +28,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: article.excerpt,
     keywords: article.tags,
     authors: [{ name: article.author }],
-    alternates: { canonical: `https://kordinate.world/${slug}` },
+    alternates: { canonical: `https://traveldailypost.com/${slug}` },
     openGraph: {
       title: article.title,
       description: article.excerpt,
-      url: `https://kordinate.world/${article.slug}`,
+      url: `https://traveldailypost.com/${article.slug}`,
       type: 'article',
       publishedTime: publishDate,
       authors: [article.author],
@@ -87,22 +87,22 @@ export default async function ArticlePage({ params }: Props) {
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Kordinate News',
+      name: 'Travel Daily Post',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://kordinate.world/logo.png',
+        url: 'https://traveldailypost.com/logo.png',
       },
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://kordinate.world/${article.slug}`,
+      '@id': `https://traveldailypost.com/${article.slug}`,
     },
     articleSection: article.categoryName,
     keywords: article.tags.join(', '),
-    url: `https://kordinate.world/${article.slug}`,
+    url: `https://traveldailypost.com/${article.slug}`,
   };
 
-  const shareUrl = encodeURIComponent(`https://kordinate.world/${article.slug}`);
+  const shareUrl = encodeURIComponent(`https://traveldailypost.com/${article.slug}`);
   const shareTitle = encodeURIComponent(article.title);
 
   return (
@@ -177,7 +177,7 @@ export default async function ArticlePage({ params }: Props) {
               {article.coverImageCaption ? (
                 <p className="image-caption">{article.coverImageCaption}</p>
               ) : (
-                <p className="image-caption">Image: {article.categoryName} — Kordinate News</p>
+                <p className="image-caption">Image: {article.categoryName} — Travel Daily Post</p>
               )}
 
               {/* Article Body */}

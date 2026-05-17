@@ -10,16 +10,16 @@ const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-headin
 const robotoCondensed = Roboto_Condensed({ subsets: ['latin'], weight: ['400', '500', '600', '700'], variable: '--font-condensed' });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://kordinate.world'),
+  metadataBase: new URL('https://traveldailypost.com'),
   title: {
-    default: 'Kordinate News – Global Travel News & Tourism Updates',
-    template: '%s | Kordinate News',
+    default: 'Travel Daily Post – Global Travel News & Tourism Updates',
+    template: '%s | Travel Daily Post',
   },
   description: 'Breaking travel news, tourism updates, airline news, hotel news, cruise news, and destination guides. Your trusted global travel news source.',
   keywords: ['travel news', 'tourism news', 'airline news', 'hotel news', 'cruise news', 'destination news', 'travel deals', 'travel alerts'],
-  authors: [{ name: 'Kordinate News Editorial Team' }],
-  creator: 'Kordinate News',
-  publisher: 'Kordinate News',
+  authors: [{ name: 'Travel Daily Post Editorial Team' }],
+  creator: 'Travel Daily Post',
+  publisher: 'Travel Daily Post',
   robots: {
     index: true,
     follow: true,
@@ -34,16 +34,16 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://kordinate.world',
-    siteName: 'Kordinate News',
-    title: 'Kordinate News – Global Travel News & Tourism Updates',
+    url: 'https://traveldailypost.com',
+    siteName: 'Travel Daily Post',
+    title: 'Travel Daily Post – Global Travel News & Tourism Updates',
     description: 'Breaking travel news, tourism updates, airline news, hotel news, cruise news, and destination guides.',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Kordinate News',
+        alt: 'Travel Daily Post',
       },
     ],
   },
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     google: 'your-google-verification-code',
   },
   alternates: {
-    canonical: 'https://kordinate.world',
+    canonical: 'https://traveldailypost.com',
   },
   icons: {
     icon: [
@@ -74,7 +74,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <head>
         <link rel="preconnect" href="https://images.unsplash.com" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
         <meta name="theme-color" content="#CC0000" />
         <meta name="googlebot-news" content="index, follow" />
         <Script
@@ -109,11 +109,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </main>
         <div id="sticky-social-icons-container" className="design-sharp alignment-right with-animation hide-in-mobile">
           <ul>
-            <li className="fa-brands-fa-linkedin"><a href="http://www.linkedin.com/company/travel-and-tour-world" target="_blank" className="fa-brands-fa-linkedin"><i className="fa-brands fa-linkedin"></i></a></li>
-            <li className="fa-brands-fa-facebook-square"><a href="https://www.facebook.com/ttwemagazine" target="_blank" className="fa-brands-fa-facebook-square"><i className="fa-brands fa-facebook-square"></i></a></li>
-            <li className="fa-brands-fa-x-twitter"><a href="https://x.com/ttw_digital" target="_blank" className="fa-brands-fa-x-twitter"><i className="fa-brands fa-x-twitter"></i></a></li>
-            <li className="fa-brands-fa-instagram"><a href="https://www.instagram.com/travelandtourworld" target="_blank" className="fa-brands-fa-instagram"><i className="fa-brands fa-instagram"></i></a></li>
-            <li className="fa-brands-fa-youtube"><a href="https://www.youtube.com/user/TravelAndTourWorld" target="_blank" className="fa-brands-fa-youtube"><i className="fa-brands fa-youtube"></i></a></li>
+            <li className="fa-brands-fa-linkedin"><a href="https://www.linkedin.com/company/traveldailypost" target="_blank" className="fa-brands-fa-linkedin"><i className="fa-brands fa-linkedin"></i></a></li>
+            <li className="fa-brands-fa-facebook-square"><a href="https://www.facebook.com/traveldailypost" target="_blank" className="fa-brands-fa-facebook-square"><i className="fa-brands fa-facebook-square"></i></a></li>
+            <li className="fa-brands-fa-x-twitter"><a href="https://x.com/rinovative007" target="_blank" className="fa-brands-fa-x-twitter"><i className="fa-brands fa-x-twitter"></i></a></li>
+            <li className="fa-brands-fa-instagram"><a href="https://www.instagram.com/raushantheroska/" target="_blank" className="fa-brands-fa-instagram"><i className="fa-brands fa-instagram"></i></a></li>
+            <li className="fa-brands-fa-youtube"><a href="https://www.youtube.com/@traveldailypost" target="_blank" className="fa-brands-fa-youtube"><i className="fa-brands fa-youtube"></i></a></li>
             <li className="fa-solid-fa-envelope"><a href="mailto:your-email@example.com" target="_blank" className="fa-solid-fa-envelope"><i className="fa-solid fa-envelope"></i></a></li>
           </ul>
         </div>

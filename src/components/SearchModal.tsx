@@ -170,7 +170,7 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
           {!isLoading && !query && (
             <div style={{ padding: '28px 20px', textAlign: 'center' }}>
               <div style={{ fontSize: 32, marginBottom: 10 }}>🔍</div>
-              <p style={{ color: '#888', fontSize: 14 }}>Start typing to search Kordinate News…</p>
+              <p style={{ color: '#888', fontSize: 14 }}>Start typing to search Travel Daily Post…</p>
             </div>
           )}
 

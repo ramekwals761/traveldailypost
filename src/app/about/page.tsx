@@ -3,8 +3,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'About Us | Kordinate News',
-  description: 'Learn about Kordinate News — your trusted global travel news source covering airlines, tourism, hotels, destinations, and more.',
+  title: 'About Us | Travel Daily Post',
+  description: 'Learn about Travel Daily Post — your trusted global travel news source covering airlines, tourism, hotels, destinations, and more.',
 };
 
 const team = [
@@ -15,7 +15,7 @@ const team = [
     ring: 'ring-red-200',
     badge: 'from-red-500 to-rose-700',
     image: '/images/raushan-kumar.webp',
-    bio: 'Full-stack developer with 11+ years of experience and a passionate traveller. Raushan built Nomad Lawyer from the ground up with a vision to create the best travel and law experience on the web.',
+    bio: 'Full-stack developer with 11+ years of experience and a passionate traveller. Raushan built Travel Daily Post from the ground up with a vision to create the best travel and news experience on the web.',
     social: {
       facebook: 'https://www.facebook.com/raushan790',
       linkedin: 'https://www.linkedin.com/in/raushan790/',
@@ -29,7 +29,7 @@ const team = [
     ring: 'ring-violet-200',
     badge: 'from-violet-500 to-indigo-600',
     image: '/images/kunal.webp',
-    bio: 'A passionate traveller and tech enthusiast. Kunal contributes to the vision and growth of Nomad Lawyer, bringing fresh perspectives and driving the community forward.',
+    bio: 'A passionate traveller and tech enthusiast. Kunal contributes to the vision and growth of Travel Daily Post, bringing fresh perspectives and driving the community forward.',
     social: {
       facebook: 'https://www.facebook.com/kunal.3110',
       linkedin: 'https://www.linkedin.com/in/kunal-kishore-choudhary-096b73119/',
@@ -43,7 +43,7 @@ const team = [
     ring: 'ring-teal-200',
     badge: 'from-teal-400 to-emerald-600',
     image: '/images/preeti-gunjan.webp',
-    bio: 'A passionate traveller and community builder. Preeti helps grow the Nomad Lawyer community, fostering engagement and bringing the reader experience to life.',
+    bio: 'A passionate traveller and community builder. Preeti helps grow the Travel Daily Post community, fostering engagement and bringing the reader experience to life.',
     social: {
       facebook: 'https://www.facebook.com/preeti.gunjan.73932',
       instagram: 'https://www.instagram.com/preeti.gunjan.73932/',
@@ -56,7 +56,7 @@ const team = [
     ring: 'ring-rose-200',
     badge: 'from-rose-400 to-pink-600',
     image: '/images/naina.webp',
-    bio: 'A creative and enthusiastic storyteller. Naina brings her unique perspective and creativity to Nomad Lawyer, helping craft engaging travel stories for readers worldwide.',
+    bio: 'A creative and enthusiastic storyteller. Naina brings her unique perspective and creativity to Travel Daily Post, helping craft engaging travel stories for readers worldwide.',
     social: {
       facebook: 'https://www.facebook.com/naina.thakur.733',
       linkedin: 'https://www.linkedin.com/in/naina-thakur-4b165299/',
@@ -97,7 +97,7 @@ export default function About() {
             padding: '5px 16px', borderRadius: 99, marginBottom: 20,
             backdropFilter: 'blur(8px)',
           }}>
-            ✈️ About Kordinate News
+            ✈️ About Travel Daily Post
           </span>
           <h1 style={{
             fontFamily: 'var(--font-heading)', fontSize: 'clamp(32px, 5vw, 56px)',
@@ -110,7 +110,7 @@ export default function About() {
             fontSize: 18, color: 'rgba(255,255,255,0.85)',
             maxWidth: 580, margin: '0 auto 36px', lineHeight: 1.7,
           }}>
-            Kordinate News delivers real-time travel news, destination guides, airline updates, and tourism insights to 2 million readers worldwide.
+            Travel Daily Post delivers real-time travel news, destination guides, airline updates, and tourism insights to 2 million readers worldwide.
           </p>
           <Link href="/contact" style={{
             display: 'inline-block', background: 'white', color: 'var(--color-primary)',
@@ -170,7 +170,7 @@ export default function About() {
                 Keeping Travelers<br />Informed, Always
               </h2>
               <p style={{ color: '#555', lineHeight: 1.8, marginBottom: 16 }}>
-                Kordinate News was built with a single purpose: to be the most trusted and comprehensive travel news platform in the world. We believe that travel transforms lives, and informed travelers make better decisions.
+                Travel Daily Post was built with a single purpose: to be the most trusted and comprehensive travel news platform in the world. We believe that travel transforms lives, and informed travelers make better decisions.
               </p>
               <p style={{ color: '#555', lineHeight: 1.8 }}>
                 From breaking airline disruptions to hidden gem destination spotlights, our team of experienced journalists covers every corner of the globe — so you never miss a story that matters.
@@ -218,7 +218,7 @@ export default function About() {
               Meet the Contributors
             </h2>
             <p style={{ color: '#888', fontSize: 16, lineHeight: 1.7 }}>
-              The passionate journalists and editors behind every story, insight, and travel update on Kordinate News.
+              The passionate journalists and editors behind every story, insight, and travel update on Travel Daily Post.
             </p>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, marginTop: 20 }}>
               <div style={{ height: 4, width: 48, borderRadius: 99, background: 'var(--color-primary)' }} />

@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import { Article, Category, TravelEvent } from './types'
+import { Article, Category } from './types'
 
 // Function to recursively read all markdown files from content/posts
 function loadArticlesFromFiles(): Article[] {

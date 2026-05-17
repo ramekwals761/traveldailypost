@@ -46,7 +46,6 @@ const FEED_CONFIG = process.env.FEED_URLS
       { url: 'https://www.travelandtourworld.com/news/article/category/travel-news/feed/', category: 'travel-news' },
       { url: 'https://www.travelandtourworld.com/news/article/category/tourism-news/feed', category: 'tourism-news' },
       { url: 'https://www.travelandtourworld.com/news/article/category/airline-news/feed/', category: 'airline-news' },
-      { url: 'https://www.travelandtourworld.com/news/article/category/travel-association-news/feed/', category: 'travel-association-news' },
       { url: 'https://www.travelandtourworld.com/news/article/category/railway-news/feed', category: 'railway-news' },
       { url: 'https://www.travelandtourworld.com/news/article/category/cruise-news/feed/', category: 'cruise-news' },
       { url: 'https://www.travelandtourworld.com/news/article/category/destination-news/feed/', category: 'destination-news' },
@@ -54,9 +53,7 @@ const FEED_CONFIG = process.env.FEED_URLS
       { url: 'https://www.travelandtourworld.com/news/article/category/travel-alert/feed/', category: 'travel-alerts' },
       { url: 'https://www.travelandtourworld.com/news/article/category/travel-deals/feed', category: 'travel-deals' },
       { url: 'https://www.travelandtourworld.com/news/article/category/travel-trends/feed/', category: 'travel-trends' },
-      { url: 'https://www.travelandtourworld.com/news/article/category/travel-technology-news/feed/', category: 'technology-news' },
-      { url: 'https://www.travelandtourworld.com/news/article/category/travel-event-news/feed/', category: 'travel-events' },
-      { url: 'https://www.travelandtourworld.com/news/article/category/meeting-and-event-industry-news/feed/', category: 'meeting-events' }
+      { url: 'https://www.travelandtourworld.com/news/article/category/travel-technology-news/feed/', category: 'technology-news' }
     ]
 
 const SEEN_FILE = path.join(__dirname, 'seen-articles.json')
@@ -244,9 +241,6 @@ const CATEGORY_NAME_MAP = {
   'travel-deals': 'Travel Deals',
   'travel-trends': 'Travel Trends',
   'technology-news': 'Technology News',
-  'travel-events': 'Travel Events',
-  'meeting-events': 'Meeting & Events',
-  'travel-association-news': 'Travel Association News',
 }
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

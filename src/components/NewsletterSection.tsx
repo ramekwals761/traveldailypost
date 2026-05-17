@@ -29,7 +29,7 @@ export default function NewsletterSection() {
 
           {status === 'success' ? (
             <div style={{ background: 'rgba(255,255,255,0.2)', borderRadius: 8, padding: '18px 24px', color: 'white', fontWeight: 600, fontSize: 16 }}>
-              🎉 You&apos;re subscribed! Welcome to Kordinate News.
+              🎉 You&apos;re subscribed! Welcome to Travel Daily Post.
             </div>
           ) : (
             <form className="newsletter-form" onSubmit={handleSubmit} noValidate>

@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Disclaimer | Kordinate News',
-  description: 'Important disclaimer regarding Kordinate News content.',
+  title: 'Disclaimer | Travel Daily Post',
+  description: 'Important disclaimer regarding Travel Daily Post content.',
 };
 
 export default function Disclaimer() {
@@ -18,7 +18,7 @@ export default function Disclaimer() {
           <section className="content-section">
             <h2>General Disclaimer</h2>
             <p>
-              The information provided by Kordinate News ("we", "us", "our", or "Company") on our website (the "Service") is for general informational purposes only. All information on the Service is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Service.
+              The information provided by Travel Daily Post ("we", "us", "our", or "Company") on our website (the "Service") is for general informational purposes only. All information on the Service is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Service.
             </p>
           </section>
 
@@ -39,7 +39,7 @@ export default function Disclaimer() {
           <section className="content-section">
             <h2>Liability Limitations</h2>
             <p>
-              Under no circumstance shall Kordinate News have any liability to you in connection with any event or occurrence related to the use of the Service. These limitations shall apply notwithstanding any negligence or gross negligence, but shall not apply in case of willful misconduct.
+              Under no circumstance shall Travel Daily Post have any liability to you in connection with any event or occurrence related to the use of the Service. These limitations shall apply notwithstanding any negligence or gross negligence, but shall not apply in case of willful misconduct.
             </p>
           </section>
 
@@ -47,7 +47,7 @@ export default function Disclaimer() {
             <h2>Contact Us</h2>
             <p>
               If you have any concerns about this disclaimer, please contact us at:
-              <br/><a href="mailto:contact@kordinate.world">contact@kordinate.world</a>
+              <br/><a href="mailto:contact@traveldailypost.com">contact@traveldailypost.com</a>
             </p>
           </section>
         </article>

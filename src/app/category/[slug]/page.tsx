@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { categories, getArticlesByCategory } from '@/lib/news-data';
-import NewsCard from '@/components/NewsCard';
 import Sidebar from '@/components/Sidebar';
+import CategoryArticlesList from '@/components/CategoryArticlesList';
 import { articles } from '@/lib/news-data';
 
 export const revalidate = 3600;
@@ -21,17 +21,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const category = categories.find((c) => c.slug === slug);
   if (!category) return { title: 'Category Not Found' };
 
-  return {
-    title: `${category.name} – Latest News & Updates`,
-    description: `Stay updated with the latest ${category.name.toLowerCase()} — breaking news, analysis, and expert coverage from Kordinate News.`,
-    alternates: { canonical: `https://kordinate.world/category/${category.slug}` },
-    openGraph: {
-      title: `${category.name} – Kordinate News`,
-      description: `Latest ${category.name.toLowerCase()} from around the world.`,
-      url: `https://kordinate.world/category/${category.slug}`,
-      type: 'website',
-    },
-  };
+    return {
+      title: `${category.name} – Latest News & Updates`,
+      description: `Stay updated with the latest ${category.name.toLowerCase()} — breaking news, analysis, and expert coverage from Travel Daily Post.`,
+      alternates: { canonical: `https://traveldailypost.com/category/${category.slug}` },
+      openGraph: {
+        title: `${category.name} – Travel Daily Post`,
+        description: `Latest ${category.name.toLowerCase()} from around the world.`,
+        url: `https://traveldailypost.com/category/${category.slug}`,
+        type: 'website',
+      },
+    };
 }
 
 export default async function CategoryPage({ params }: Props) {
@@ -46,8 +46,8 @@ export default async function CategoryPage({ params }: Props) {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://kordinate.world' },
-      { '@type': 'ListItem', position: 2, name: category.name, item: `https://kordinate.world/category/${category.slug}` },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://traveldailypost.com' },
+      { '@type': 'ListItem', position: 2, name: category.name, item: `https://traveldailypost.com/category/${category.slug}` },
     ],
   };
 
@@ -81,11 +81,7 @@ export default async function CategoryPage({ params }: Props) {
           <div className="content-with-sidebar">
             <div>
               {categoryArticles.length > 0 ? (
-                <div className="news-grid-main news-grid-3">
-                  {categoryArticles.map((article, idx) => (
-                    <NewsCard key={article.id} article={article} priority={idx < 3} />
-                  ))}
-                </div>
+                <CategoryArticlesList articles={categoryArticles} />
               ) : (
                 <div style={{
                   textAlign: 'center',

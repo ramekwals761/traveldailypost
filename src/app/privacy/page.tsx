@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Kordinate News',
-  description: 'Learn about how Kordinate News protects your privacy.',
+  title: 'Privacy Policy | Travel Daily Post',
+  description: 'Learn about how Travel Daily Post protects your privacy.',
 };
 
 export default function PrivacyPolicy() {
@@ -18,7 +18,7 @@ export default function PrivacyPolicy() {
           <section className="content-section">
             <h2>Introduction</h2>
             <p>
-              Kordinate News ("we", "our", or "us") operates the Kordinate News website. This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our service and the choices you have associated with that data.
+              Travel Daily Post ("we", "our", or "us") operates the Travel Daily Post website. This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our service and the choices you have associated with that data.
             </p>
           </section>
 
@@ -44,7 +44,7 @@ export default function PrivacyPolicy() {
             <h2>Contact Us</h2>
             <p>
               If you have any questions about this Privacy Policy, please contact us at:
-              <br/><a href="mailto:contact@kordinate.world">contact@kordinate.world</a>
+              <br/><a href="mailto:contact@traveldailypost.com">contact@traveldailypost.com</a>
             </p>
           </section>
         </article>

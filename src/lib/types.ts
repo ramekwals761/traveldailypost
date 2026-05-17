@@ -21,9 +21,3 @@ export interface Category {
   color: string;
 }
 
-export interface TravelEvent {
-  name: string;
-  date: string;
-  venue: string;
-  slug: string;
-}

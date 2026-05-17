@@ -15,6 +15,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
     ],
-    sitemap: 'https://kordinate.world/sitemap.xml',
+    sitemap: 'https://traveldailypost.com/sitemap.xml',
   };
 }

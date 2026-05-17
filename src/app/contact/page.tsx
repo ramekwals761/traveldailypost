@@ -35,7 +35,7 @@ export default function Contact() {
         <article className="page-content">
           <div className="page-header">
             <h1>Contact Us</h1>
-            <p className="lead">Get in touch with the Kordinate News team.</p>
+            <p className="lead">Get in touch with the Travel Daily Post team.</p>
           </div>
 
           <div className="contact-container">
@@ -50,21 +50,21 @@ export default function Contact() {
                 <div className="contact-item">
                   <h3>Email</h3>
                   <p>
-                    <a href="mailto:contact@kordinate.world">contact@kordinate.world</a>
+                    <a href="mailto:contact@traveldailypost.com">contact@traveldailypost.com</a>
                   </p>
                 </div>
 
                 <div className="contact-item">
                   <h3>For Story Tips</h3>
                   <p>
-                    <a href="mailto:contact@kordinate.world">contact@kordinate.world</a>
+                    <a href="mailto:contact@traveldailypost.com">contact@traveldailypost.com</a>
                   </p>
                 </div>
 
                 <div className="contact-item">
                   <h3>For Advertising</h3>
                   <p>
-                    <a href="mailto:contact@kordinate.world">contact@kordinate.world</a>
+                    <a href="mailto:contact@traveldailypost.com">contact@traveldailypost.com</a>
                   </p>
                 </div>
 
@@ -72,9 +72,9 @@ export default function Contact() {
                   <h3>Follow Us</h3>
                   <div className="social-links">
                     <a href="https://x.com/rinovative007" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
-                    <a href="https://www.facebook.com/KorinateWorld" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="https://www.facebook.com/traveldailypost" target="_blank" rel="noopener noreferrer">Facebook</a>
                     <a href="https://www.instagram.com/raushantheroska/" target="_blank" rel="noopener noreferrer">Instagram</a>
-                    <a href="https://www.youtube.com/@kordinatenews" target="_blank" rel="noopener noreferrer">YouTube</a>
+                    <a href="https://www.youtube.com/@traveldailypost" target="_blank" rel="noopener noreferrer">YouTube</a>
                   </div>
                 </div>
               </div>

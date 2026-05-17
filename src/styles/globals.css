@@ -2341,9 +2341,16 @@ h1, h2, h3, h4, h5, h6 {
   transition: var(--transition);
 }
 
+#sticky-social-icons-container li.fa-brands-fa-linkedin { background: #0A66C2; }
+#sticky-social-icons-container li.fa-brands-fa-facebook-square { background: #1877F2; }
+#sticky-social-icons-container li.fa-brands-fa-x-twitter { background: #000000; }
+#sticky-social-icons-container li.fa-brands-fa-instagram { background: #E1306C; }
+#sticky-social-icons-container li.fa-brands-fa-youtube { background: #FF0000; }
+#sticky-social-icons-container li.fa-solid-fa-envelope { background: #657786; }
+
 #sticky-social-icons-container li:hover {
-  background: var(--color-primary-dark);
-  transform: scale(1.1);
+  filter: brightness(1.2);
+  transform: scale(1.1) translateY(-2px);
 }
 
 #sticky-social-icons-container a {
